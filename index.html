@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Builder Wynncraft · build tools for Wynncraft</title>
+    <meta name="description" content="Builder Wynncraft: a free fan-made build recommender, optimizer and creator for Wynncraft. Pick your class, level and ability tree and get a full nine-slot build that fits your skill points." />
+    <meta name="google-adsense-account" content="ca-pub-7432545979405227" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7432545979405227" crossorigin="anonymous"></script>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0e0c13;
+        --panel: #1e1b26;
+        --text: #e8e6ee;
+        --muted: #a9aac9;
+        --gold: #ffaa00;
+        --green: #55ff55;
+        --line: #3a3644;
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          color-scheme: light;
+          --bg: #f4f2f8;
+          --panel: #ffffff;
+          --text: #1c1a24;
+          --muted: #5a5670;
+          --gold: #9a6400;
+          --green: #1d7a1d;
+          --line: #d8d5de;
+        }
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+      main { max-width: 820px; margin: 0 auto; padding: 40px 16px 64px; }
+      h1 { margin: 0; font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.15; color: var(--gold); }
+      h2 { margin: 0 0 8px; font-size: 1.2rem; color: var(--gold); }
+      p { margin: 0 0 12px; }
+      a { color: var(--gold); }
+      .lead { font-size: 1.1rem; color: var(--muted); margin-top: 12px; }
+      .cta { display: inline-block; margin: 20px 0 8px; padding: 12px 22px; background: #2f7d32; color: #fff; font-weight: 700; text-decoration: none; border: 2px solid #1b4d1d; }
+      .cta:hover { background: #38923b; }
+      section { background: var(--panel); border: 1px solid var(--line); padding: 18px 20px 8px; margin-top: 18px; }
+      .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 18px; }
+      .grid section { margin-top: 0; }
+      ul { padding-left: 20px; margin: 0 0 12px; }
+      li { margin-bottom: 4px; }
+      dt { font-weight: 700; margin-top: 10px; }
+      dd { margin: 2px 0 8px; color: var(--muted); }
+      footer { margin-top: 32px; color: var(--muted); font-size: 0.9rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Builder Wynncraft</h1>
+      <p class="lead">Free build tools for Wynncraft, the Minecraft MMORPG. Tell it your class, level and ability tree and it puts together a complete build: helmet, chestplate, leggings, boots, two rings, bracelet, necklace and a weapon for your class, one that you can actually wear with the skill points you have.</p>
+      <a class="cta" href="/builderwynncraft/">Open the Build Recommender →</a>
+
+      <div class="grid">
+        <section>
+          <h2>Recommender</h2>
+          <p>Answer a few questions (class, rank, level, ability tree, what you want to be good at) and get a full build generated from every item in the game, checked against your skill points and your effective HP.</p>
+        </section>
+        <section>
+          <h2>Optimizer</h2>
+          <p>Keep the items and abilities you already like. The optimizer fills the empty slots, spends spare ability points, suggests tomes, aspects and better swaps, and changes nothing until you accept it.</p>
+        </section>
+        <section>
+          <h2>Creator</h2>
+          <p>Build everything by hand from the full item database, with damage, spell and effective HP numbers as you go. Import and export Wynnbuilder links.</p>
+        </section>
+      </div>
+
+      <section>
+        <h2>What it takes into account</h2>
+        <ul>
+          <li>Your level and class: only items you can equip, and weapons for your class.</li>
+          <li>Skill points: every build is checked so all nine items can be worn at once with the points you have.</li>
+          <li>Your ability tree and archetype, including major IDs, set bonuses, powders, tomes and aspects.</li>
+          <li>Damage per spell and melee, mana sustain, effective HP and walk speed, so a build is not fast on paper and slow in the game.</li>
+          <li>Guide builds from experienced players, a library of builds published by players, and a Build Solver that searches for builds matching stat targets.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Questions</h2>
+        <dl>
+          <dt>Is it free?</dt>
+          <dd>Yes. There is nothing to install and no account; your settings and saved builds stay in your browser.</dd>
+          <dt>Where do the numbers come from?</dt>
+          <dd>Item data, ability trees and damage formulas come from the open-source Wynnbuilder project, checked build by build against its calculator. Trade Market prices come from WynnVentory.</dd>
+          <dt>Are the builds the best possible?</dt>
+          <dd>They are strong starting points. The game, your playstyle and your team have the last word, so check a build before buying items for it.</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <p>A fan-made project, not affiliated with Wynncraft. <a href="/builderwynncraft/privacy.html">Privacy</a> · <a href="https://github.com/szVM3K/builderwynncraft">Source and feedback on GitHub</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
